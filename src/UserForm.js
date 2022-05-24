@@ -9,9 +9,12 @@ class UserForm extends Component {
     }
 
     onChangeUserName = (event) => {
+        console.log("event",event)
+        console.log("val",event.target.value)
         this.setState({ username: event.target.value })
     }
     onChangePassWord = (event) => {
+        console.log("val",event.target.value)
         this.setState({ password: event.target.value })
     }
     onChangeEmail = (event) => {
@@ -19,10 +22,7 @@ class UserForm extends Component {
     }
     onSubmitForm=(e)=> {
         e.preventDefault()
-        if(!this.state.username.includes("@"))
-        {
-            this.setState({nameError:"Invalid Name"})
-        }
+      
        console.log("state",this.state)
     }
  
@@ -35,7 +35,7 @@ class UserForm extends Component {
                     <input type="text" value={this.state.username} onChange={
                         this.onChangeUserName
                         }></input>
-                        <p>{this.state.nameError}</p>
+                       
                     {this.state.username}
                     <label>Password</label>
                     <input type="text" value={this.state.password} onChange={this.onChangePassWord}></input>

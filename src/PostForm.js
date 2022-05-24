@@ -17,7 +17,7 @@ import React, { Component } from 'react';
        }
     submitHandler
     render() {
-        const{userId,title,body}
+        // const{userId,title,body}
         return (
             <div>
                 <form onSubmit={this.submitHandler}>

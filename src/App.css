@@ -1,7 +1,14 @@
 .App {
   text-align: center;
 }
+.formsr{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 50%;
+  margin-left: 366px;
 
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
